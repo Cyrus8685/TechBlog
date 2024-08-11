@@ -14,7 +14,7 @@ const sequelize = new Sequelize({
     ssl: {
       require: true, // This will help you. But you will see nwe error
       rejectUnauthorized: false,
-      verify: verify_none,
+      verify: "verify_none",
       idle_interval: 60, 
       idle_limit: 300 // This line will fix new error
     }
