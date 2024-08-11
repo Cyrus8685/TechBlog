@@ -15,7 +15,8 @@ const sequelize = new Sequelize({
       require: true, // This will help you. But you will see nwe error
       rejectUnauthorized: false,
       verify: verify_none,
-      parameters: [idle_interval: 60, idle_limit:300] // This line will fix new error
+      idle_interval: 60, 
+      idle_limit: 300 // This line will fix new error
     }
   },
 });
