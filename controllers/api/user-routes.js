@@ -58,8 +58,8 @@ router.get('/:id', (req, res) => {
 
 
 router.post('/', (req, res) => {
-
-    const { username, password } = req.body;
+     console.log(req.body);
+     console.log(req.body.password);
 
      console.log(username, password);
     User.create({

@@ -7,7 +7,7 @@ router.use('/api', apiRoutes);
 router.use('/', homeRoutes);
 router.use('/dashboard', dashboardRoutes);
 router.use((req, res) => {
-    res.status(404).next();
+    res.status(404);
 });
 console.log("api-index");
 module.exports = router;
