@@ -58,10 +58,13 @@ router.get('/:id', (req, res) => {
 
 
 router.post('/', (req, res) => {
-     console.log(req);
+
+    const { username, password } = req.body;
+
+     console.log(username, password);
     User.create({
-        username: req.body.username,
-        password: req.body.password
+        username: username,
+        password: password
     })
 
     .then(dbUserData => {
